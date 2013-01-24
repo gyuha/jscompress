@@ -19,18 +19,19 @@ Usage
 -----------
 
 Uses closure-compiler to minimize multiple JavaScript files.
+
 Usage: `jscompress [-h] [-all] [-o out] [-l level] file1 file2 ...`
 
--all : All sub directory .js files to each Compress. Sub in file options are ignore.
+	-all : All sub directory .js files to each Compress. Sub in file options are ignore.
+	
+	-o   : Output file. using -o followed by its name. If no output file is specified, to each compress files.
+	
+	-l   : Compilation Level
+		1 : Whitespace only
+		2 : Simple (default)
+		3 : Advanced
 
--o   : Output file. using -o followed by its name. If no output file is specified, to each compress files.
-
--l   : Compilation Level
-	1 : Whitespace only
-	2 : Simple (default)
-	3 : Advanced
-
-Uses closure-compiler to minimize multiple JavaScript files and concatenate them into a
-single file. The files are concatenated in the order they are received as parameters.
+Uses closure-compiler to minimize multiple JavaScript files and concatenate them into a single file. 
+The files are concatenated in the order they are received as parameters.
 
 
